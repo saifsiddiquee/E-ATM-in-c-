@@ -1,0 +1,94 @@
+﻿<Controls:MetroWindow
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:fsxaml="http://github.com/fsprojects/FsXaml"
+        xmlns:Controls="http://metro.mahapps.com/winfx/xaml/controls" 
+        xmlns:ControlzEx="clr-namespace:ControlzEx;assembly=MahApps.Metro" x:Class="E_ATM.Customer" 
+        Title="Customer" Height="555.161" Width="672.193">
+    <Grid>
+
+        <Grid x:Name="mainGrid" Margin="10,11,2,9" Height="504" Visibility="Visible">
+
+            <Grid.Background>
+                <ImageBrush ImageSource="Images/Asset 1.png" Stretch="Uniform" Opacity="0.53"/>
+            </Grid.Background>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <DockPanel Background="Wheat" Opacity=".8" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" Margin="0,0,10,0" Visibility="Hidden">
+                <StackPanel Orientation="Horizontal" Visibility="Hidden">
+
+                    <RadioButton x:Name="rbtnMasterCard"  Margin="0,0,13,0" FontSize="20" FontFamily="Segoe UI" FontWeight="Bold">
+                        <Image Source="Images/masterCard.png"/>
+                    </RadioButton>
+                    <RadioButton x:Name="rbtnVisaCard"  Margin="0,0,20,0" FontSize="20" FontFamily="Segoe UI" FontWeight="Bold">
+                        <Image Source="Images/visaCard.png"/>
+                    </RadioButton>
+                    <RadioButton x:Name="rbtnDebitCard"  Margin="0,0,116,0" FontSize="20" FontFamily="Segoe UI" FontWeight="Bold">
+                        <Image Source="Images/debitCard.png"/>
+                    </RadioButton>
+
+                </StackPanel>
+            </DockPanel>
+            <TextBox x:Name="CardNumBox" MaxLength="20" Grid.ColumnSpan="3" HorizontalAlignment="Left" Height="30" Margin="120,59,0,0" Grid.Row="1" 
+                 TextWrapping="Wrap" VerticalAlignment="Top" Width="412" Controls:TextBoxHelper.Watermark="Enter your Card Number" Controls:TextBoxHelper.ClearTextButton="True" Background="White" />
+            <PasswordBox x:Name="PinBox" MaxLength="4" HorizontalAlignment="Left" Margin="120,113,0,0" Grid.Row="1" VerticalAlignment="Top" 
+                     Grid.ColumnSpan="3" Width="412" Height="30" Controls:TextBoxHelper.ClearTextButton="True" Controls:TextBoxHelper.Watermark="Enter your 4-digit PIN" Background="White"/>
+            <Button x:Name="btnNext" Content="Next" Grid.Column="1" HorizontalAlignment="Left" Margin="10,34,0,0" Grid.Row="2" 
+                VerticalAlignment="Top" Width="198" Height="48" Style="{DynamicResource SquareButtonStyle}" FontSize="20" FontWeight="Bold" Click="Button_Click"/>
+        </Grid>
+
+        <Grid x:Name="menuGrid" Visibility="Hidden">
+            <Grid.Background>
+                <ImageBrush ImageSource="Images/Asset 1.png" Stretch="Uniform" Opacity="0.53"/>
+            </Grid.Background>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <WrapPanel HorizontalAlignment="Center" Height="262" Margin="9,134,10,128" Grid.RowSpan="3" VerticalAlignment="Center" Width="202" Orientation="Vertical">
+                <Button x:Name="WithdrawButton" Content="Withdraw" Width="200" Height="87" Style="{StaticResource AccentedSquareButtonStyle}" FontSize="20" Cursor="Hand" Click="WithdrawButton_Click" />
+                <Button x:Name="BalanceButton" Content="Balance" Width="200" Height="87" Style="{StaticResource AccentedSquareButtonStyle}" FontSize="20" Cursor="Hand" Click="BalanceButton_Click" />
+                <Button x:Name="HistoryButton" Content="Transaction History" Width="200" Height="87" Style="{StaticResource AccentedSquareButtonStyle}" FontSize="20" Cursor="Hand" Click="HistoryButton_Click" />
+            </WrapPanel>
+            <Grid x:Name="OutputGrid" Grid.Column="1" HorizontalAlignment="Left" Height="504" Margin="10,10,0,0" VerticalAlignment="Top" Width="423" Grid.ColumnSpan="2" Grid.RowSpan="3">
+                <StackPanel x:Name="WithdrawStackPanel" HorizontalAlignment="Left" Height="142" Margin="20,141,0,0" VerticalAlignment="Top" Width="403" Visibility="Hidden">
+                    <TextBox x:Name="WithdrawTextBox" Height="42" TextWrapping="Wrap" 
+                         Controls:TextBoxHelper.Watermark="Enter your amount" Controls:TextBoxHelper.ClearTextButton="True" />
+                    <Button x:Name="ConfirmButton" Margin="98,17,133,0" Height="49" Style="{DynamicResource SquareButtonStyle}" Content="Confirm" FontSize="24" Click="ConfirmButton_Click" />
+
+                </StackPanel>
+                <StackPanel x:Name="BalanceStackPanel" HorizontalAlignment="Left" Height="209" Margin="0,183,0,0" VerticalAlignment="Top" Width="413" Visibility="Hidden">
+                    <Label Content="Balance" FontSize="36" FontWeight="Bold"/>
+                    <TextBlock x:Name="Balance"  Height="87" FontSize="36" FontWeight="Bold" />
+                </StackPanel>
+            </Grid>
+            <Button x:Name="btnBack" Content="" HorizontalAlignment="Left" Margin="40,64.667,0,0" Grid.Row="2" VerticalAlignment="Top" Width="112" Height="100" Cursor="Hand" BorderBrush="{x:Null}" Click="btnBack_Click">
+                <Button.Background>
+                    <ImageBrush ImageSource="Images/backButton.png" />
+                </Button.Background>
+            </Button>
+            <ContentControl Grid.Row="0" Grid.Column="1" Grid.RowSpan="5" Grid.ColumnSpan="4">
+                <DataGrid x:Name="TransactionDataGrid" AutoGenerateColumns="True" VerticalScrollBarVisibility="Hidden"
+                      HorizontalAlignment="Left" Height="503" Margin="0,10,0,0" VerticalAlignment="Top" Width="426" 
+                  GridLinesVisibility="None" Controls:DataGridHelper.EnableCellEditAssist="True" Visibility="Hidden">
+            </DataGrid>
+            </ContentControl>
+        </Grid>
+
+
+    </Grid>
+</Controls:MetroWindow>

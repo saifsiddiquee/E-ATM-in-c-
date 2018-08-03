@@ -1,0 +1,38 @@
+D:\C#\E-ATM\E-ATM\bin\Debug\E-ATM.exe.config
+D:\C#\E-ATM\E-ATM\bin\Debug\E-ATM.exe
+D:\C#\E-ATM\E-ATM\bin\Debug\E-ATM.pdb
+D:\C#\E-ATM\E-ATM\bin\Debug\MahApps.Metro.dll
+D:\C#\E-ATM\E-ATM\bin\Debug\System.Windows.Interactivity.dll
+D:\C#\E-ATM\E-ATM\bin\Debug\MahApps.Metro.pdb
+D:\C#\E-ATM\E-ATM\bin\Debug\MahApps.Metro.xml
+D:\C#\E-ATM\E-ATM\obj\Debug\MainWindow.baml
+D:\C#\E-ATM\E-ATM\obj\Debug\MainWindow.g.cs
+D:\C#\E-ATM\E-ATM\obj\Debug\App.g.cs
+D:\C#\E-ATM\E-ATM\obj\Debug\E-ATM_MarkupCompile.cache
+D:\C#\E-ATM\E-ATM\obj\Debug\E-ATM.g.resources
+D:\C#\E-ATM\E-ATM\obj\Debug\E_ATM.Properties.Resources.resources
+D:\C#\E-ATM\E-ATM\obj\Debug\E-ATM.csproj.GenerateResource.Cache
+D:\C#\E-ATM\E-ATM\obj\Debug\E-ATM.exe
+D:\C#\E-ATM\E-ATM\obj\Debug\E-ATM.pdb
+D:\C#\E-ATM\E-ATM\obj\Debug\App.baml
+D:\C#\E-ATM\E-ATM\obj\Debug\E-ATM.csprojResolveAssemblyReference.cache
+D:\C#\E-ATM\E-ATM\bin\Debug\MahApps.Metro.IconPacks.Modern.dll
+D:\C#\E-ATM\E-ATM\bin\Debug\MahApps.Metro.IconPacks.Modern.pdb
+D:\C#\E-ATM\E-ATM\bin\Debug\MahApps.Metro.IconPacks.Modern.xml
+D:\C#\E-ATM\E-ATM\obj\Debug\Resources\Icons.baml
+D:\C#\E-ATM\E-ATM\obj\Debug\Resources\IconsNonShared.baml
+D:\C#\E-ATM\E-ATM\obj\Debug\Admin.baml
+D:\C#\E-ATM\E-ATM\obj\Debug\Bank.baml
+D:\C#\E-ATM\E-ATM\obj\Debug\Customer.baml
+D:\C#\E-ATM\E-ATM\obj\Debug\Admin.g.cs
+D:\C#\E-ATM\E-ATM\obj\Debug\Bank.g.cs
+D:\C#\E-ATM\E-ATM\obj\Debug\Customer.g.cs
+D:\C#\E-ATM\E-ATM\obj\Debug\BankContent.baml
+D:\C#\E-ATM\E-ATM\obj\Debug\CustomerContent.baml
+D:\C#\E-ATM\E-ATM\obj\Debug\BankContent.g.cs
+D:\C#\E-ATM\E-ATM\obj\Debug\CustomerContent.g.cs
+D:\C#\E-ATM\E-ATM\bin\Debug\EntityFramework.dll
+D:\C#\E-ATM\E-ATM\bin\Debug\EntityFramework.xml
+I:\2. AIUB Courses\C#\E-ATM\E-ATM\bin\Debug\E-ATM.exe.config
+I:\2. AIUB Courses\C#\E-ATM\E-ATM\obj\Debug\E-ATM.exe
+I:\2. AIUB Courses\C#\E-ATM\E-ATM\obj\Debug\E-ATM.pdb
